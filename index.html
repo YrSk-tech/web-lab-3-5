@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Main Page</title>
+</head>
+
+<body>
+    <header id="main-header">
+        <div class="header-container">
+            <h1 class="header__shop-name">My Shop</h1>
+
+            <nav class="header__navigation">
+                <a class="header__navigation--my-officeTool" href="#">My Office Tool</a>
+                <a class="header__navigation--create-officeTool" href="create.html">Create Office Tool</a>
+            </nav>
+
+            <div class="header__search">
+                <input class="header__search-bar" id="search-bar" placeholder="Type something..." type="text">
+                <button class="header__search--search-button" id="search-button">Search</button>
+                <button type="reset" class="header__search--clear-button" id="clear-button">Clear</button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="side-section">
+            <div class="side-section-cotainer">
+                <div class="manage">
+                    <h2 class="title">Manage Office Tool</h2>
+
+                    <div class="sort">
+                        <p class="text">Sort by the most expensive officeTool</p>
+                        <button class="sort-button" id="sort-button"><div class="sort-button--element" id="sort-button--element"></div></button>
+                    </div>
+                </div>
+                <div class="expenses">
+                    <p class="text">Count total daily expenses:</p>
+
+                    <button class="count-button" id="count-button">Count</button>
+
+                    <div class="summary">
+                        <p class="text">Total expenses:</p>
+                        <p class="total-price" id="total-price"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class='main-section'>
+            <div class="main-section-container">
+                <div class="main-section__products" id="main-section__products">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script type='module' src="Scripts/main.js"></script>
+
+</body>
+
+</html>
